@@ -12,6 +12,9 @@
 
     <title>Ana Cafe</title>
 
+    <!-- without this below,,, my load static that i inserted btwn images/src won't work -->
+    {% load static %}
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -46,7 +49,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                            <img src="{% static 'assets/images/klassy-logo.png" align="klassy cafe html template' %}">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -146,13 +149,13 @@
                         <p>Ana Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
                         <div class="row">
                             <div class="col-4">
-                                <img src="assets/images/about-thumb-01.jpg" alt="">
+                                <img src="{% static 'assets/images/about-thumb-01.jpg' %}" alt="">
                             </div>
                             <div class="col-4">
-                                <img src="assets/images/about-thumb-02.jpg" alt="">
+                                <img src="{% static 'assets/images/about-thumb-02.jpg' %}" alt="">
                             </div>
                             <div class="col-4">
-                                <img src="assets/images/about-thumb-03.png" alt="">
+                                <img src="{% static 'assets/images/about-thumb-03.png' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -161,7 +164,7 @@
                     <div class="right-content">
                         <div class="thumb">
                             <a rel="nofollow" href="http://youtube.com"><i class="fa fa-play"></i></a>
-                            <img src="assets/images/about-video-bg.jpg" alt="">
+                            <img src="{% static 'assets/images/about-video-bg.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -391,9 +394,9 @@
                                 <div class="row">
                                     <div class="col-lg-6 offset-lg-3">
                                         <ul>
-                                          <li><a href='#tabs-1'><img src="assets/images/tab-icon-01.png" alt="">Breakfast</a></li>
-                                          <li><a href='#tabs-2'><img src="assets/images/tab-icon-02.png" alt="">Lunch</a></a></li>
-                                          <li><a href='#tabs-3'><img src="assets/images/tab-icon-03.png" alt="">Dinner</a></a></li>
+                                          <li><a href='#tabs-1'><img src="{% static 'assets/images/tab-icon-01.png' %}" alt="">Breakfast</a></li>
+                                          <li><a href='#tabs-2'><img src="{% static 'assets/images/tab-icon-02.png' %}" alt="">Lunch</a></a></li>
+                                          <li><a href='#tabs-3'><img src="{% static 'assets/images/tab-icon-03.png' %}" alt="">Dinner</a></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -408,7 +411,7 @@
                                                 <div class="left-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-01.jpeg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-01.jpeg' %}" alt="">
                                                             <h4>Fried plantain with Fried egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -418,7 +421,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-02.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-02.jpg' %}" alt="">
                                                             <h4>Pizza</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -428,7 +431,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-03.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-03.jpg' %}" alt="">
                                                             <h4>Orange mocktail</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -444,7 +447,7 @@
                                                 <div class="right-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-04.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-04.jpg' %}" alt="">
                                                             <h4>Boiled Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -454,7 +457,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-05.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-05.jpg' %}" alt="">
                                                             <h4>Egg & Dodo Fritata</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -464,7 +467,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-06.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-06.jpg' %}" alt="">
                                                             <h4>Boiled Plantain with Fried Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -484,7 +487,7 @@
                                                 <div class="left-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-04.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-04.jpg'%}" alt="">
                                                             <h4>Boiled Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -494,7 +497,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-05.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-05.jpg'%}" alt="">
                                                             <h4>Egg & Dodo Fritata</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -504,7 +507,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-06.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-06.jpg'%}" alt="">
                                                             <h4>Boiled Plantain with Fried Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -520,7 +523,7 @@
                                                 <div class="right-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-01.jpeg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-01.jpeg' %}" alt="">
                                                             <h4>Fried plantain with Fried egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -530,7 +533,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-02.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-02.jpg' %}" alt="">
                                                             <h4>Pizza</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -540,7 +543,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-03.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-03.jpg' %}" alt="">
                                                             <h4>Orange mocktail</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -560,7 +563,7 @@
                                                 <div class="left-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-05.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-05.jpg' %}" alt="">
                                                             <h4>Egg & Dodo Fritata</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -570,7 +573,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-04.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-04.jpg' %}" alt="">
                                                             <h4>Boiled Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -580,7 +583,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-02.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-02.jpg' %}" alt="">
                                                             <h4>Pizza</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -596,7 +599,7 @@
                                                 <div class="right-list">
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-06.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-06.jpg' %}" alt="">
                                                             <h4>Boiled Plantain with Fried Egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -606,7 +609,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-01.jpeg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-01.jpeg' %}" alt="">
                                                             <h4>Fried plantain with Fried egg</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
@@ -616,7 +619,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
-                                                            <img src="assets/images/tab-item-03.jpg" alt="">
+                                                            <img src="{% static 'assets/images/tab-item-03.jpg' %}" alt="">
                                                             <h4>Orange mocktail</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
