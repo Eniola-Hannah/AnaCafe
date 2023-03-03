@@ -65,7 +65,7 @@
                                 </ul>
                             </li>
                             {% if not request.user.is_authenticated %}
-                            <li class="scroll-to-section"><a href="#about">Sign In</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'login' %}">Sign In</a></li>
                             <li class="scroll-to-section"><a href="#menu">Sign Up</a></li>
                             {% endif %}
                             <li><a href="#">
