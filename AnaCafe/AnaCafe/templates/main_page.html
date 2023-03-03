@@ -55,9 +55,6 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
-                           	
-                            <li class="scroll-to-section"><a href="#menu">Menu</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Category</a>
                                 <ul>
@@ -67,16 +64,25 @@
                                     <li><a href="{% url 'bakery' %}">Bakery</a></li>
                                 </ul>
                             </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Profile</a>
-                                <ul>
-                                    <li><a href="#">Drop Down Page 1</a></li>
-                                    <li><a href="#">Drop Down Page 2</a></li>
-                                    <li><a href="#">Drop Down Page 3</a></li>
-                                </ul>
-                            </li>
+                            {% if not request.user.is_authenticated %}
+                            <li class="scroll-to-section"><a href="#about">Sign In</a></li>
+                            <li class="scroll-to-section"><a href="#menu">Sign Up</a></li>
+                            {% endif %}
+                            <li><a href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="padding_10">Cart</span></a>
+                             </li>
+                            {% if request.user.is_authenticated %}
+                                <li class="submenu">
+                                    <a class="fa fa-user" aria-hidden="true" href="javascript:;"> Profile</a>
+                                    <ul>
+                                        <li><a href="#">Me</a></li>
+                                        <li><a href="#">Change Password</a></li>
+                                        <li><a href="#">Log out</a></li>
+                                    </ul>
+                                </li>
+                            {% endif %}
                         
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
