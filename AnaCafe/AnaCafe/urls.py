@@ -12,6 +12,6 @@ urlpatterns = [
     path('food/', TemplateView.as_view(template_name='food.html'), name='food'),
     path('bakery/', TemplateView.as_view(template_name='bakery.html'), name='bakery'),
     path('protein/', TemplateView.as_view(template_name='protein.html'), name='protein'),
-    # it's inside this link below we have access to django login, logout, reste password, set passord etc
+    # it's inside this link below we have access to django login, logout, reset password, set password etc
     re_path(r'^accounts/', include('django.contrib.auth.urls')),
 ]
