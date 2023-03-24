@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # "bootstrapform",
+    "AnaCafe.userApp",
+    "AnaCafe.paymentApp",
+    "AnaCafe.productApp"
 ]
 
 MIDDLEWARE = [
