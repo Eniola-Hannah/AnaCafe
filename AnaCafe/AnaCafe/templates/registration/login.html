@@ -1,4 +1,4 @@
-{% extends "main_page.html" %} 
+{% extends "password_main_page.html" %} 
    {% block title %} Sign in {% endblock title %}
 
    {% block  body_content %}
@@ -8,7 +8,7 @@
     <div class="container-fluid position-relative">
         <div class="slider-active">
             <div class="single-slider">
-                <div class="slider-bg">
+                <div class="slider-bg mt-4">
                 <form method="POST">
                     {% csrf_token %}
                     {{form.as_p}}
